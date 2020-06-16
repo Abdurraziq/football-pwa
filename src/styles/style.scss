@@ -1,0 +1,95 @@
+/* -- Materialize CSS -- */
+// Main
+@import '~materialize-css/sass/components/color-variables';
+@import '~materialize-css/sass/components/color-classes';
+@import '~materialize-css/sass/components/variables';
+@import '~materialize-css/sass/components/normalize';
+@import '~materialize-css/sass/components/global';
+@import '~materialize-css/sass/components/typography';
+
+// Component
+@import '~materialize-css/sass/components/buttons';
+@import '~materialize-css/sass/components/cards';
+@import '~materialize-css/sass/components/dropdown';
+@import '~materialize-css/sass/components/grid';
+@import '~materialize-css/sass/components/icons-material-design';
+@import '~materialize-css/sass/components/navbar';
+@import '~materialize-css/sass/components/preloader';
+@import '~materialize-css/sass/components/sidenav';
+@import '~materialize-css/sass/components/slider';
+@import '~materialize-css/sass/components/toast';
+@import '~materialize-css/sass/components/waves';
+
+
+/*-- Custom --*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+  font-display: block;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon {
+  padding-right: 1rem;
+}
+
+.slider {
+  margin: 16px 0 32px;
+}
+
+.slides img {
+  -webkit-filter: brightness(0.5) blur(5px);
+  filter: brightness(0.5) blur(5px);
+}
+
+.overflow-x {
+  overflow-x: auto;
+}
+
+.medium .card-image {
+  height: 100%;
+}
+
+.medium .card-image img {
+  width: unset !important;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.loader {
+  position: absolute;
+  margin: auto;
+  top: 120px;
+  left: 0;
+  right: 0;
+}
