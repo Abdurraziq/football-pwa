@@ -19,7 +19,7 @@ class AppDB {
       .then(db => {
         const tx = db.transaction('fav-club', 'readwrite')
         const store = tx.objectStore('fav-club')
-        store.add(team)
+        store.put(team)
         return tx.complete
       })
       .then(() => {
