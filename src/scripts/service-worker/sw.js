@@ -11,21 +11,30 @@ clientsClaim()
 // precache hasil build webpack
 precacheAndRoute(self.__WB_MANIFEST, { ignoreURLParametersMatching: [/.*/] })
 
+// Google font
 registerRoute(
-  // Icon font
   ({ url }) => url.origin === 'https://fonts.gstatic.com',
-  new CacheFirst({ cacheName: 'google-fonts' })
+  new CacheFirst({
+    cacheName: 'google-fonts',
+    plugins: [
+      new CacheableResponsePlugin({ statuses: [0, 200] }),
+      new ExpirationPlugin({
+        maxAgeSeconds: 60 * 60 * 24 * 365,
+        maxEntries: 30
+      })
+    ]
+  })
 )
 
+// Data dari api.football-data
 registerRoute(
-  // Data dari api.football-data
   ({ url }) => url.origin === 'https://api.football-data.org',
   new NetworkFirst({ cacheName: 'football-data' })
 )
 
+// Gambar dari upload.wikimedia.org
 registerRoute(
-  // Gambar dari upload.wikimedia.org
-  ({ url, request }) => (url.origin === 'https://upload.wikimedia.org') && (request.destination === 'image'),
+  ({ request }) => request.destination === 'image',
   new CacheFirst({
     cacheName: 'images',
     plugins: [
