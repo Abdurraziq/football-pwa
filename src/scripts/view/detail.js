@@ -1,4 +1,5 @@
 import '../components/nav-bar.js'
+import '../components/custom-footer.js'
 import '../page/team-detail.js'
 
 import { toast } from 'materialize-css'

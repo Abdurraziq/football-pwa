@@ -1,4 +1,5 @@
 import '../components/nav-bar.js'
+import '../components/custom-footer.js'
 import '../page/home-page.js'
 import '../page/team-list.js'
 import '../page/fav-list.js'
