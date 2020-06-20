@@ -6,10 +6,10 @@ const vapidKeys = {
   privateKey: 'VAaBv398cVKgpcffRfu_51M-pDKdT9NShK0zRaueKWo'
 }
 const pushSubscription = {
-  endpoint: 'https://fcm.googleapis.com/fcm/send/cpo3zslunNY:APA91bETm1O9if7_Vnit3o2BlDsp5a-4Vw80ye1fssJ4-4DA9y-WWXkMCiUTfnxLIkv5_q_9zc00TITIKbcBmYt-FYj9xj4N-H2vT4WW7t8mlkktPogax1M7vd5DTQ9mv72PfjLTuzEQ',
+  endpoint: 'https://fcm.googleapis.com/fcm/send/c_pLAEyeXjM:APA91bHgWA7klfHwxSdReS3j7E1yrQDJsB1t1R2e8MtkJKi6_Mj4WFjgRF5WWLaV-WpqJfkaXuDm-Fx4r9s0ztK-m8Ls5-TErNUKX7IcaZ22JkjuZ8PEt4BAkvyHglK1SLHBBbSBXNdq',
   keys: {
-    p256dh: 'BDG5Ralydps7JJFSdfFJOps2ff0Vb9UGw1g8uoWG9149xrLD/pCIKYXPC6CXrie68xZByjhmo5NmQBPYnw0RZ2E=',
-    auth: 'HXMkPro0geYslyQLj6XEJg=='
+    p256dh: 'BOtrTcQXZg5cwOtQvzScQV4zisBptvuxJbsUNcvXQOcMXMH3YEhjmdzFzHm0To49aPJfHNaKgpMxGdzXaQzWEFc=',
+    auth: 'BjK/4qGEKdkAE03SQjOoJg=='
   }
 }
 const payload = 'Hai, ini notifikasi dari Football-App PWA!'
