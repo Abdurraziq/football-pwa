@@ -1,0 +1,2 @@
+firebase hosting: https://monoton-43901.web.app/
+github pages: https://abdurraziq.github.io/football-pwa/
