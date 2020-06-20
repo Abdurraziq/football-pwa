@@ -14,7 +14,13 @@ Aplikasi informasi sepakbola berbasis Progressive Web.
     npm run build
     ```
 
-3. untuk mencoba push notification:
+3. Untuk mendepeloy ke Github Pages (dijalankan setelah project berhasil di-build):
+
+    ```bash
+    npm run deploy
+    ```
+
+4. untuk mencoba push notification:
 
     ```bash
     npm run test-web-push
