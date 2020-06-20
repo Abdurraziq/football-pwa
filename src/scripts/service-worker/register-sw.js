@@ -6,7 +6,7 @@ import urlBase64ToUint8Array from '../utils/urlbase64toint8array'
 const registerSW = async () => {
   if ('serviceWorker' in navigator) {
     try {
-      await navigator.serviceWorker.register('/sw.js')
+      await navigator.serviceWorker.register('./sw.js')
       console.log('Pendaftaran ServiceWorker berhasil')
     } catch (e) {
       throw new Error('Pendaftaran ServiceWorker gagal', e)
