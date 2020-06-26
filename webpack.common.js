@@ -41,7 +41,7 @@ module.exports = {
       name: 'Football-PWA',
       short_name: 'Football',
       description: 'Football Progressive Web Application',
-      start_url: '/index.html',
+      start_url: './index.html',
       background_color: '#FFFFFF',
       theme_color: '#000000',
       icons: [{
